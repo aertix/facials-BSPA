@@ -1,0 +1,31 @@
+.nav{
+    width:100%;
+    justify-content: center;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    margin-bottom:2vw;
+    gap:20vw;
+    a{
+        img{
+            height:2vw;
+        }
+        text-decoration: none;
+        margin-top:1vw;
+        margin-bottom:.2vw;
+        font-size:2vw;
+        color:rgb(77, 77, 255);
+        &:hover{
+            color:rgb(79, 52, 83);
+        }
+    }
+    &:after{
+        content:'';
+        background-color: var(--lilac);
+        width:70%;
+        height:.3vw;
+        bottom:0;
+        left:15vw;
+        position:absolute;
+    }
+}

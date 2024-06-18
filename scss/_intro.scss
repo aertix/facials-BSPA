@@ -1,0 +1,50 @@
+.introduction{
+    width:100vw;
+    gap:4vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div{
+        gap:.5vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:80%;
+       h1{
+        font-size:4vw;
+       }
+       h3{
+        width:80%;
+        font-size:2vw;
+       }
+       p{
+
+       }
+       a:nth-child(1){
+        cursor: pointer;
+        color:var(--cream);
+        
+        border-radius:2vw;
+        font-size:2.2vw;
+    
+        button{
+            cursor:pointer;
+            background-color: white;
+            color:lightslategray;
+            padding:1vw;
+            font-size:2vw;
+            border:1px solid var(--brown);
+            transition:.2s all;
+            &:hover{
+                background-color: var(--lilac);
+                color:white;
+            }
+         }
+        }
+        a:nth-child(3){}
+            background-color: red;
+            cursor:pointer;
+        }
+}

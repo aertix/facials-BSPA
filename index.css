@@ -1,0 +1,286 @@
+:root {
+  --cream:#FFFBF0;
+  --lilac: #59637E;
+  --brown: rgb(101, 38, 2);
+  --darkLilac:rgb(101, 38, 2);
+}
+
+.line {
+  width: 100%;
+  background-color: black;
+  height: 0.1vw;
+}
+
+* {
+  margin: 0;
+  font-family: "roca", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p {
+  font-family: "roca", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "roca", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--brown);
+}
+
+body {
+  background-color: var(--cream);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.giftSectionMobile {
+  display: none;
+}
+
+.giftReviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.giftReviews h1 {
+  font-size: 4vw;
+}
+.giftReviews div {
+  width: 80%;
+}
+
+.giftBTN {
+  background-color: var(--darkgray);
+  padding: 0.5vw 2vw;
+  padding-top: 1vw;
+}
+
+.gift {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.gift h1 {
+  font-size: 6vw;
+  width: 90vw;
+  color: var(--brown);
+  line-height: 7vw;
+  margin: 1vw 0;
+}
+.gift h2 {
+  font-size: 2.4vw;
+  width: 80%;
+}
+.gift h2:nth-child(1) {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 400;
+  color: var(--lilac);
+}
+.gift p {
+  font-size: 2vw;
+  width: 80%;
+}
+.gift a {
+  cursor: pointer;
+  color: var(--cream);
+  border-radius: 2vw;
+  font-size: 2.2vw;
+}
+.gift a button {
+  cursor: pointer;
+  background-color: white;
+  color: lightslategray;
+  padding: 1vw;
+  font-size: 2vw;
+  border: 1px solid var(--brown);
+  transition: 0.2s all;
+}
+.gift a button:hover {
+  background-color: var(--lilac);
+  color: white;
+}
+.gift a img {
+  height: 5vw;
+  color: var(--cream);
+}
+.gift div {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10vw;
+}
+.gift div img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: 15s slide2 infinite linear;
+}
+@keyframes slide2 {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+@media (max-width: 500px) {
+  .giftSection {
+    display: none;
+  }
+  .giftSectionMobile {
+    display: flex;
+  }
+  .gift {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .gift h1 {
+    font-size: 8vw;
+    width: 95vw;
+    padding-top: 2vw;
+    line-height: 10vw;
+    margin-top: 4vw;
+  }
+  .gift h2 {
+    font-size: 5vw;
+    padding-bottom: 1vw;
+    margin: 2vw 0;
+  }
+  .gift a {
+    cursor: pointer;
+    font-size: 8vw;
+    padding: 0 4vw;
+    padding-top: 2vw;
+    border-radius: 20vw;
+  }
+  .gift a img {
+    height: 15vw;
+  }
+  .gift div {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10vw;
+  }
+  .gift div img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60vw;
+    width: 200%;
+    animation: 15s slide2 infinite linear;
+  }
+  @keyframes slide2 {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -200%;
+    }
+  }
+}
+.nav {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 2vw;
+  gap: 20vw;
+}
+.nav a {
+  text-decoration: none;
+  margin-top: 1vw;
+  margin-bottom: 0.2vw;
+  font-size: 2vw;
+  color: rgb(77, 77, 255);
+}
+.nav a img {
+  height: 2vw;
+}
+.nav a:hover {
+  color: rgb(79, 52, 83);
+}
+.nav:after {
+  content: "";
+  background-color: var(--lilac);
+  width: 70%;
+  height: 0.3vw;
+  bottom: 0;
+  left: 15vw;
+  position: absolute;
+}
+
+.introduction {
+  width: 100vw;
+  gap: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.introduction div {
+  gap: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  background-color: red;
+  cursor: pointer;
+}
+.introduction div h1 {
+  font-size: 4vw;
+}
+.introduction div h3 {
+  width: 80%;
+  font-size: 2vw;
+}
+.introduction div a:nth-child(1) {
+  cursor: pointer;
+  color: var(--cream);
+  border-radius: 2vw;
+  font-size: 2.2vw;
+}
+.introduction div a:nth-child(1) button {
+  cursor: pointer;
+  background-color: white;
+  color: lightslategray;
+  padding: 1vw;
+  font-size: 2vw;
+  border: 1px solid var(--brown);
+  transition: 0.2s all;
+}
+.introduction div a:nth-child(1) button:hover {
+  background-color: var(--lilac);
+  color: white;
+}/*# sourceMappingURL=index.css.map */
