@@ -215,7 +215,7 @@ html {
   position: relative;
   justify-content: center;
   margin-bottom: 2vw;
-  gap: 20vw;
+  gap: 40vw;
 }
 .nav a {
   text-decoration: none;
@@ -255,15 +255,16 @@ html {
   align-items: center;
   text-align: center;
   width: 80%;
-  background-color: red;
-  cursor: pointer;
 }
 .introduction div h1 {
-  font-size: 4vw;
+  font-size: 3vw;
 }
 .introduction div h3 {
-  width: 80%;
-  font-size: 2vw;
+  width: 60%;
+  font-size: 1.6vw;
+}
+.introduction div h2 {
+  font-size: 1.2vw;
 }
 .introduction div a:nth-child(1) {
   cursor: pointer;
@@ -271,16 +272,22 @@ html {
   border-radius: 2vw;
   font-size: 2.2vw;
 }
-.introduction div a:nth-child(1) button {
+.bookNow {
   cursor: pointer;
   background-color: white;
   color: lightslategray;
-  padding: 1vw;
+  padding: 0.7vw;
+  padding-top: 1vw;
   font-size: 2vw;
   border: 1px solid var(--brown);
   transition: 0.2s all;
 }
-.introduction div a:nth-child(1) button:hover {
+.bookNow:hover {
   background-color: var(--lilac);
   color: white;
+}
+
+.telephone {
+  font-size: 2vw;
+  margin: 1vw 0;
 }/*# sourceMappingURL=index.css.map */
