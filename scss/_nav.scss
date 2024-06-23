@@ -1,22 +1,24 @@
 .nav{
-    width:100%;
+    width:100vw;
     justify-content: center;
     display: flex;
-    position:relative;
+    background-color: var(--cream);
+    flex-direction: row;
+    position:fixed;
     justify-content: center;
-    margin-bottom:2vw;
-    gap:40vw;
-    a{
+    gap:10vw;
+    z-index:1000;
+    a{  
+        margin-top:1vw;
         img{
-            height:2vw;
+            height:3vw;
         }
         text-decoration: none;
-        margin-top:1vw;
         margin-bottom:.2vw;
         font-size:2vw;
-        color:rgb(77, 77, 255);
+        color:var(--brown);
         &:hover{
-            color:rgb(79, 52, 83);
+            color:rgb(118, 166, 249);
         }
     }
     &:after{

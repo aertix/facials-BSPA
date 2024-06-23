@@ -17,18 +17,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/uvn8jxz.css">
     <script defer src="../js/AOS.js"></script>
 
-
+    <script>
+        $(function () {
+            $("#navbar-placeholder").load("../comps/nav.html");
+        });
+    </script>
+    
+    <div id="navbar-placeholder"></div>
 </head>
 
 <body>
     <div>
-        <script>
-            $(function () {
-                $("#navbar-placeholder").load("../comps/nav.html");
-            });
-        </script>
         
-        <div id="navbar-placeholder"></div>
         <div class="gift">
             <h2>ATTENTION Beauty Obsessed WHO WANT TO Achieve Glowing, Youthful Skin!</h2>
             <h1>Introducing Body Suite Spa's Signature Facials!</h1>
@@ -55,7 +55,8 @@
         </div>
         <section class="introduction">
             <div>
-                <h1>Our 7 Step Process</h1>
+                <h3>Each Facial Begins With:</h3>
+                <h1>Our Signature 7 Step Process!</h1>
                 <div class="line"></div>
                 <h2>1. Cleansing</h2>
                 <h3>Cleanse the skin twice to remove all dirt.</h3>
@@ -88,6 +89,59 @@
             
 
         </section>
+
+        <section id="facials" class="services">
+            <!-- Serv 1 -->
+            <div class="service">
+                <div>
+                    <h1>Aromatherapy Facial</h1>
+                    <p>Botanical or marine extracts to rejuvenate and nourish the skin. 
+                         Aromatherapy is applied to soothe and exhilarate the senses.</p>
+                </div>
+                <!-- Price -->
+                <h2>$95</h2>
+            </div>
+            <!-- Serv 1 -->
+            <div class="service">
+                <div>
+                    <h1>Trifecta Signature Facial</h1>
+                    <p>A glycolic exfoliation is utilized to minimize pores. Next, microdermabrasion, a non-surgical, non-invasive treatment is used to visibly renew the skin and smooth fine lines. As a finishing touch, a cooling masque is applied to soothe and hydrate the skin.</p>
+                </div>
+                <!-- Price -->
+                <h2>$190</h2>
+            </div>
+            <!-- Serv 1 -->
+            <div class="service">
+                <div>
+                    <h1>Manhattan Glow Glycolic Peel Facial</h1>
+                    <p>a glycolic exfoliation is applied to reduce fine lines and minimize pores. 
+                        A light foot and hand massage is the finishing touch.</p>
+                </div>
+                <!-- Price -->
+                <h2>$95</h2>
+            </div>
+            <!-- Serv 1 -->
+            <div class="service">
+                <div>
+                    <h1>The Microdermabrasion Riviera Facial </h1>
+                    <p>The Microdermabrasion Riviera Facial focuses on resurfacing and polishing the skin. 
+                        Removing fine lines, wrinkles, pigmentation, and texture.</p>
+                </div>
+                <!-- Price -->
+                <h2>$95</h2>
+            </div>
+            <!-- Serv 1 -->
+            <div class="service">
+                <div>
+                    <h1>Aromatherapy Facial</h1>
+                    <p>Botanical or marine extracts to rejuvenate and nourish the skin. 
+                         Aromatherapy is applied to soothe and exhilarate the senses.</p>
+                </div>
+                <!-- Price -->
+                <h2>$95</h2>
+            </div>
+            
+        </section>
         <div id="giftReviews" class="giftReviews">
             <h1>Over 100 5 ⭐️ Reviews!</h1>
             <script type='text/javascript' src='https://api.leadconnectorhq.com/js/reviews_widget.js'></script>
@@ -98,12 +152,12 @@
            
     
         </div>
-        <section class="faq">
+        <!-- <section class="faq">
             <div>
-                <h1></h1>
+                <h1>Are they painful?</h1>
                 <p></p>
             </div>
-        </section>
+        </section> -->
 
     <script>
         $(function () {

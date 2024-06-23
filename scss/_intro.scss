@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     div{
         gap:.5vw;
         display:flex;
@@ -57,5 +58,6 @@
 .telephone{
     font-size:2vw;
     margin:1vw 0;
-    
+    text-decoration:wavy;
+    color:cadetblue;
 }
