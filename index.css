@@ -9,6 +9,7 @@
   width: 100%;
   background-color: black;
   height: 0.1vw;
+  margin: 0;
 }
 
 * {
@@ -163,23 +164,51 @@ html {
     align-items: center;
     flex-direction: column;
     text-align: center;
-  }
-  .gift h1 {
-    font-size: 8vw;
-    width: 95vw;
-    padding-top: 2vw;
-    line-height: 10vw;
-    margin-top: 4vw;
-  }
-  .gift h2 {
-    font-size: 5vw;
-    padding-bottom: 1vw;
-    margin: 2vw 0;
+    padding-top: 15vw;
   }
   .gift a {
     cursor: pointer;
-    font-size: 8vw;
-    padding: 0 4vw;
+    color: var(--cream);
+    border-radius: 10vw;
+    font-size: 2.2vw;
+  }
+  .gift a button {
+    cursor: pointer;
+    background-color: white;
+    color: lightslategray;
+    padding: 1vw;
+    font-size: 5vw;
+    width: 100%;
+    border: 1px solid var(--brown);
+    transition: 0.2s all;
+  }
+  .gift a button:hover {
+    background-color: var(--lilac);
+    color: white;
+  }
+  .gift a img {
+    height: 5vw;
+    color: var(--cream);
+  }
+  .gift h1 {
+    font-size: 13vw;
+    width: 95vw;
+    padding-top: 0vw;
+    line-height: 13vw;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+  }
+  .gift h2 {
+    font-size: 7vw;
+    margin-bottom: 1vw;
+  }
+  .gift h2:nth-child(3) {
+    font-size: 5vw;
+  }
+  .gift a {
+    cursor: pointer;
+    font-size: 12vw;
+    padding: 0 20vw;
     padding-top: 2vw;
     border-radius: 20vw;
   }
@@ -245,6 +274,48 @@ html {
   position: absolute;
 }
 
+@media (max-width: 500px) {
+  .nav {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    background-color: var(--cream);
+    flex-direction: row;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    z-index: 1000;
+  }
+  .nav a {
+    margin-top: 1vw;
+    text-decoration: none;
+    margin-bottom: 0.2vw;
+    font-size: 5vw;
+    color: var(--brown);
+  }
+  .nav a img {
+    height: 10vw;
+  }
+  .nav a:hover {
+    color: rgb(118, 166, 249);
+  }
+  .nav a:nth-child(2) {
+    display: none;
+  }
+  .nav a:nth-child(3) {
+    display: none;
+  }
+  .nav:after {
+    content: "";
+    background-color: var(--lilac);
+    width: 70%;
+    height: 0.3vw;
+    bottom: 0;
+    left: 15vw;
+    position: absolute;
+  }
+}
 .introduction {
   width: 100vw;
   gap: 4vw;
@@ -300,6 +371,61 @@ html {
   color: cadetblue;
 }
 
+@media (max-width: 500px) {
+  .introduction {
+    width: 100vw;
+    gap: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .introduction div {
+    gap: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+  }
+  .introduction div h1 {
+    font-size: 10vw;
+  }
+  .introduction div h3 {
+    width: 90%;
+    font-size: 5.6vw;
+  }
+  .introduction div h2 {
+    font-size: 6.2vw;
+  }
+  .introduction div a:nth-child(1) {
+    cursor: pointer;
+    color: var(--cream);
+    border-radius: 2vw;
+    font-size: 2.2vw;
+  }
+  .bookNow {
+    cursor: pointer;
+    background-color: white;
+    color: lightslategray;
+    padding: 0 10vw;
+    padding-top: 2vw;
+    font-size: 10vw;
+    border: 1px solid var(--brown);
+    transition: 0.2s all;
+  }
+  .bookNow:hover {
+    background-color: var(--lilac);
+    color: white;
+  }
+  .telephone {
+    font-size: 6vw;
+    margin-top: 6vw;
+    -webkit-text-decoration: wavy;
+            text-decoration: wavy;
+    color: cadetblue;
+  }
+}
 .services {
   display: flex;
   flex-direction: row;
@@ -339,45 +465,46 @@ html {
   font-size: 1vw;
 }
 
-.services {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100vw;
-  gap: 1.5vw;
-  justify-content: center;
-  margin-top: 2vw;
+@media (max-width: 500px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    align-items: center;
+    width: 100vw;
+    gap: 1.5vw;
+    justify-content: center;
+    margin-top: 2vw;
+  }
+  .service div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 3vw;
+    padding: 0 2vw;
+    align-items: center;
+    width: 80%;
+    margin: 0vw 10vw;
+    height: auto;
+    gap: 0.5vw;
+    background: #C9D6FF; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .service div h1 {
+    font-size: 6.54vw;
+    color: var(--brown);
+  }
+  .service div p {
+    font-size: 4vw;
+    color: var(--brown);
+  }
+  .service h2 {
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 1vw;
+  }
 }
-
-.service div {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  border-radius: 3vw;
-  padding: 0 2vw;
-  align-items: center;
-  width: 20vw;
-  height: 15vw;
-  gap: 0.5vw;
-  background: #C9D6FF; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.service div h1 {
-  font-size: 1.54vw;
-  color: var(--brown);
-}
-.service div p {
-  font-size: 0.9vw;
-  color: var(--brown);
-}
-.service h2 {
-  margin-top: 1vw;
-  text-align: center;
-  font-size: 1vw;
-}
-
 .faq {
   width: 100vw;
   gap: 4vw;

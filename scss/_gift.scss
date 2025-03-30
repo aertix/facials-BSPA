@@ -114,73 +114,110 @@ display:none;
 }
 }
 
-@media(max-width:500px){
-    .giftSection{
-        display:none;
-    }
-    .giftSectionMobile{
-        display:flex;
-    }
-    .gift{
-        width:100vw;
-        height:auto;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        h1{
-           font-size:8vw;
-           width:95vw;
-           padding-top:2vw;
-           line-height:10vw;
-           margin-top:4vw;
-        }
-        h2{
-           font-size:5vw;
-           padding-bottom:1vw;
-           margin: 2vw 0;
-        }
-        a{
-           cursor: pointer;
-           font-size:8vw;
-           padding:0 4vw;
-           padding-top:2vw;
-           border-radius:20vw;
 
-           img{
-               height:15vw;
-           }
-       
+
+
+    @media(max-width:500px){
+        .giftSection{
+            display:none;
         }
-        div{
-           display:flex;
-           flex-direction:row;
-           width:90%;
-           position:relative;
-           overflow:hidden;
-           border-radius:10vw;
-           img{
-               position:relative;
-               top:0;
-               left:0;
-               height:60vw;
-               width:200%;
-               animation: 15s slide2 infinite linear;
-           }
+        .giftSectionMobile{
+            display:flex;
         }
-        section{
+        .gift{
+            a{
+                cursor: pointer;
+                color:var(--cream);
+                
+                border-radius:10vw;
+                font-size:2.2vw;
             
-        }
-        @keyframes slide2 {
-           0% {
-               left: 0%;
+                button{
+                    cursor:pointer;
+                    background-color: white;
+                    color:lightslategray;
+                    padding:1vw;
+                    font-size:5vw;
+                    width: 100%;
+                    border:1px solid var(--brown);
+                    transition:.2s all;
+                    &:hover{
+                        background-color: var(--lilac);
+                        color:white;
+                    }
+                      
+                    
+                 }
+                img{
+                    height:5vw;
+                    
+                    color:var(--cream);
+                }
+            
+             }
+            width:100vw;
+            height:auto;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding-top:15vw;
+            h1{
+               font-size:13vw;
+               width:95vw;
+               padding-top:0vw;
+               line-height:13vw;
+               margin-top:0vw;
+               margin-bottom:2vw;
+            }
+            h2{
+               font-size:7vw;
+               margin-bottom: 1vw;
+               &:nth-child(3){
+                font-size:5vw;
+               }
+            }
+            a{
+               cursor: pointer;
+               font-size:12vw;
+               padding:0 20vw;
+               padding-top:2vw;
+               border-radius:20vw;
+    
+               img{
+                   height:15vw;
+               }
+           
+            }
+            div{
+               display:flex;
+               flex-direction:row;
+               width:90%;
+               position:relative;
+               overflow:hidden;
+               border-radius:10vw;
+               img{
+                   position:relative;
+                   top:0;
+                   left:0;
+                   height:60vw;
+                   width:200%;
+                   animation: 15s slide2 infinite linear;
+               }
+            }
+            section{
+                
+            }
+            @keyframes slide2 {
+               0% {
+                   left: 0%;
+               }
+           
+               100% {
+                   left: -200%;
+               }
            }
-       
-           100% {
-               left: -200%;
            }
-       }
-       }
-
-}
+    
+    }
